@@ -1,0 +1,96 @@
+/* SHORT BANNER SECTION */
+.shortbanner {
+    height: 400px;
+    background: url(../images/Shortbanner.png);
+    background-position: top right;
+    background-size: cover;
+}
+.btn {
+    background: linear-gradient( 89.2deg, rgb(5, 120, 190) 3.3%, rgb(119, 217, 211) 97.8% );
+}
+/* PACKAGES SECTION */
+.package_section img {
+    border-top-right-radius:25px;
+    border-top-left-radius:25px;
+}
+.package_section a {
+    text-decoration: none !important;
+    font-weight: bold;
+}
+.card_price {
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;                                                                               
+}
+.card_item {
+    position: absolute;
+    bottom: 80px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 0 10px 0 0;
+    border-bottom: 1px solid lightgray;
+}
+.card_item img{
+    width: 40px;
+}
+
+/* transition */
+.anime_btn {
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(
+      89.2deg,
+      rgb(5, 120, 190) 3.3%,
+      rgb(119, 217, 211) 97.8%
+    );
+  }
+  
+  .anime_btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .anime_btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .anime_btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  
+  .anime_btn::after {
+    background: radial-gradient(
+      circle at 10% 20%,
+      rgb(145, 217, 243) 0%,
+      rgb(147, 164, 243) 90%
+    );
+  }
+  
+  .anime_btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
